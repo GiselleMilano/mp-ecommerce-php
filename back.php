@@ -11,8 +11,8 @@ switch($payment_status) {
     case "approved":
         echo("El pago fue exitoso.");
         echo("Payment_ID: " . $_GET['payment_id']);
-        echo("Payment_Type: "$_GET['payment_type']);
-        echo("External_Reference: "$_GET['external_reference']);
+        echo("Payment_Type: " . $_GET['payment_type']);
+        echo("External_Reference: " . $_GET['external_reference']);
         break;
 
     case "pending":
@@ -25,4 +25,3 @@ switch($payment_status) {
 }
 
 ?>
-<!-- <a href="https://gisellemilano-mp-ecommerce-php.herokuapp.com">continuar</a> -->
