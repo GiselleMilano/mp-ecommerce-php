@@ -7,7 +7,7 @@ MercadoPago\SDK::setAccessToken("APP_USR-6317427424180639-042414-47e969706991d3a
 $payment_status = $_GET["status"];
 
 switch($payment_status) {
-    case "success":
+    case "approved":
         echo("El pago fue exitoso.");
         echo("Payment_ID: " . $_GET['payment_id']);
         echo("Payment_Type: "$_GET['payment_type']);
