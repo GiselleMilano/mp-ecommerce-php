@@ -148,6 +148,15 @@
                                         $item->my_email = $_POST['my_email'];
                                         $item->integrator_id = $_POST['integrator_id'];
                                         $preference->items = array($item);
+                                        
+                                        //url de regreso al sitio
+                                        $preference->back_urls = array(
+                                            "success" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
+                                            "failure" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
+                                            "pending" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php"
+                                        );
+                                        $preference->auto_return = "approved";
+                                        
                                         $preference->save();
                                         
                                         //informacion del comprador
@@ -160,14 +169,6 @@
                                         $payer->address_1 = "Calle Falsa";
                                         $payer->address_2 = "Casa nro 123";
                                         $payer->postal_code = "1111";
-                                        
-                                        //url de regreso al sitio
-                                        $preference->back_urls = array(
-                                            "success" => "https://www.tu-sitio/success",
-                                            "failure" => "http://www.tu-sitio/failure",
-                                            "pending" => "http://www.tu-sitio/pending"
-                                        );
-                                        $preference->auto_return = "approved";
                                         
                                     ?>
                                     <input type="hidden" name="img" value="<?php echo $_POST['img'] ?>">
