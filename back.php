@@ -12,14 +12,17 @@ switch($payment_status) {
         echo("Payment_ID: " . $_GET['payment_id']);
         echo("Payment_Type: "$_GET['payment_type']);
         echo("External_Reference: "$_GET['external_reference']);
+        ?><a href="https://gisellemilano-mp-ecommerce-php.herokuapp.com/">continuar</a><?php
         break;
 
     case "pending":
         echo("El pago se encuentra pendiente o en proceso.");
+        ?><a href="https://gisellemilano-mp-ecommerce-php.herokuapp.com/">continuar</a><?php
         break;
 
     case "failure":
         echo("El pago ha sido rechazado o no ha finalizado correctamente.");
+        ?><a href="https://gisellemilano-mp-ecommerce-php.herokuapp.com/">continuar</a><?php
         break;
 }
 

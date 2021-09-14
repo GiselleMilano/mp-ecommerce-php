@@ -154,7 +154,8 @@
                                         $preference->back_urls = array(
                                             "success" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
                                             "failure" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
-                                            "pending" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php"
+                                            "pending" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
+                                            "approved" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com"
                                         );
                                         $preference->auto_return = "approved";
                                         $preference->save();
