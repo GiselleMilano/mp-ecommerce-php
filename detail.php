@@ -147,6 +147,7 @@
                                         $item->order_id = $_POST['order_id'];
                                         $item->my_email = $_POST['my_email'];
                                         $item->integrator_id = $_POST['integrator_id'];
+                                        
                                         $preference->items = array($item);
                                         
                                         //url de regreso al sitio
@@ -187,12 +188,9 @@
                                             preference: {
                                                 id: '<?php echo($preference->id); ?>'
                                             },
-                                            render: {
-                                                container: '.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
-                                                label: 'Pagar', // Cambia el texto del botón de pago (opcional)
-                                            }
-                                        });
+                                        )};
                                     </script>
+                                    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
                                 </div>
                             </div>
                         </div>
