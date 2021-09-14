@@ -158,6 +158,7 @@
                                         );
                                         $preference->auto_return = "approved";
                                         $preference->save();
+                                        $preference->notificaction_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notificaction.php";
                                         
                                         //informacion del comprador
                                         $payer = new MercadoPago\Payer();
@@ -190,7 +191,7 @@
                                             },
                                         )};
                                     </script>
-                                    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+                                    <a href="<?php echo $preference->init_point; ?>"><button class="mercadopago-button">Pagar con Mercado Pago</button></a>
                                 </div>
                             </div>
                         </div>
