@@ -7,23 +7,22 @@ MercadoPago\SDK::setAccessToken("APP_USR-6317427424180639-042414-47e969706991d3a
 $payment_status = $_GET["status"];
 
 switch($payment_status) {
-    case "approved":
+    case "success":
         echo("El pago fue exitoso.");
         echo("Payment_ID: " . $_GET['payment_id']);
         echo("Payment_Type: "$_GET['payment_type']);
         echo("External_Reference: "$_GET['external_reference']);
-        ?><a href="https://gisellemilano-mp-ecommerce-php.herokuapp.com/">continuar</a><?php
         break;
 
     case "pending":
         echo("El pago se encuentra pendiente o en proceso.");
-        ?><a href="https://gisellemilano-mp-ecommerce-php.herokuapp.com/">continuar</a><?php
         break;
 
     case "failure":
         echo("El pago ha sido rechazado o no ha finalizado correctamente.");
-        ?><a href="https://gisellemilano-mp-ecommerce-php.herokuapp.com/">continuar</a><?php
         break;
 }
 
 ?>
+
+<a href="https://gisellemilano-mp-ecommerce-php.herokuapp.com">continuar</a>

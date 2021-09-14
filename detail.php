@@ -152,10 +152,11 @@
                                         
                                         //url de regreso al sitio
                                         $preference->back_urls = array(
-                                            "approved" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
+                                            "success" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
                                             "failure" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
-                                            "pending" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
+                                            "pending" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php"
                                         );
+                                        $preference->auto_return = "approved";
                                         $preference->save();
                                         
                                         //informacion del comprador
