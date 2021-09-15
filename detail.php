@@ -149,7 +149,7 @@
                                         $item->integrator_id = $_POST['integrator_id'];
                                         
                                         $preference->items = array($item);
-                                        $preference->notification_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notificaction.php";
+                                        $preference->notification_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notification.php";
                                         
                                         //url de regreso al sitio
                                         $preference->back_urls = array(
