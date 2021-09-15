@@ -5,8 +5,8 @@ MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a
 $datas = array($_POST);
 
 foreach ($datas as $d) {
-    file_put_contents('data.txt', $d, FILE_APPEND);
-    file_put_contents('data.txt',"\n", FILE_APPEND);
+    file_put_contents('https://gisellemilano-mp-ecommerce-php.herokuapp.com/data.txt', $d, FILE_APPEND);
+    file_put_contents('https://gisellemilano-mp-ecommerce-php.herokuapp.com/data.txt',"\n", FILE_APPEND);
 }
 
 ?>
