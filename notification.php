@@ -7,8 +7,8 @@ $datas = array(json_encode($_POST));
 print_r($datas);
 
 foreach ($datas as $d) {
-    file_put_contents('https://gisellemilano-mp-ecommerce-php.herokuapp.com/data.php', $d, FILE_APPEND);
-    file_put_contents('https://gisellemilano-mp-ecommerce-php.herokuapp.com/data.php',"\n", FILE_APPEND);
+    file_put_contents('data.txt', $d, FILE_APPEND);
+    file_put_contents('data.txt',"\n", FILE_APPEND);
 }
 
 header("HTTP/1.0", 200);
