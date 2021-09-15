@@ -12,6 +12,5 @@ foreach ($datas as $d) {
 }
 
 header("HTTP/1.0", 200);
-header("HTTP/1.0", 201);
 
 ?>
