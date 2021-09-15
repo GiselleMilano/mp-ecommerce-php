@@ -172,11 +172,6 @@
                                         $payer->postal_code = "1111";
                                         
                                     ?>
-                                    <input type="hidden" name="img" value="<?php echo $_POST['img'] ?>">
-                                    <input type="hidden" name="title" value="<?php echo $_POST['title'] ?>">
-                                    <input type="hidden" name="price" value="<?php echo $_POST['price'] ?>">
-                                    <input type="hidden" name="unit" value="<?php echo $_POST['unit'] ?>">
-                                    <input type="hidden" name="description" value="<?php echo $_POST['description'] ?>">
                                     <script>
                                         // Agrega credenciales de SDK - public key
                                         const mp = new MercadoPago('APP_USR-7eb0138a-189f-4bec-87d1-c0504ead5626', {

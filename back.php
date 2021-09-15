@@ -15,6 +15,7 @@ switch($payment_status) {
         echo "Payment_Type: " . $_GET['payment_type'] . "<br/>";
         
         echo "External_Reference: " . $_GET['external_reference'] . "<br/>";
+        $preference->notificaction_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notificaction.php";
         break;
 
     case "pending":
