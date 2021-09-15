@@ -157,8 +157,8 @@
                                             "pending" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php"
                                         );
                                         $preference->auto_return = "approved";
-                                        $preference->save();
                                         $preference->notificaction_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notificaction.php";
+                                        $preference->save();
                                         
                                         //informacion del comprador
                                         $payer = new MercadoPago\Payer();
@@ -177,7 +177,6 @@
                                     <input type="hidden" name="price" value="<?php echo $_POST['price'] ?>">
                                     <input type="hidden" name="unit" value="<?php echo $_POST['unit'] ?>">
                                     <input type="hidden" name="description" value="<?php echo $_POST['description'] ?>">
-                                    <div class="cho-container"></div>
                                     <script>
                                         // Agrega credenciales de SDK - public key
                                         const mp = new MercadoPago('APP_USR-7eb0138a-189f-4bec-87d1-c0504ead5626', {
