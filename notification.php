@@ -4,12 +4,13 @@ MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a
 
 $datas = $_POST;
 
-print_r($datas);
+// print_r($datas);
 
-foreach ($datas as $d) {
-    file_put_contents('data.txt', $d, FILE_APPEND);
-    file_put_contents('data.txt',"\n", FILE_APPEND);
-}
+// foreach ($datas as $d) {
+file_put_contents('data.txt', print_r($datas, true), FILE_APPEND);
+file_put_contents('data.txt',"\n", FILE_APPEND);
+
+// }
 
 header("HTTP/1.0", 200);
 
