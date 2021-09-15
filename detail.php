@@ -157,9 +157,8 @@
                                             "pending" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php"
                                         );
                                         $preference->auto_return = "approved";
-                                        $preference->notificaction_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notificaction.php";
                                         $preference->save();
-                                        
+                                        $preference->notificaction_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notificaction.php";
                                         //informacion del comprador
                                         $payer = new MercadoPago\Payer();
                                         $payer->name = "Lalo";
