@@ -9,4 +9,7 @@ foreach ($datas as $d) {
     file_put_contents('https://gisellemilano-mp-ecommerce-php.herokuapp.com/data.php',"\n", FILE_APPEND);
 }
 
+header("HTTP/1.0", 200);
+header("HTTP/1.0", 201);
+
 ?>

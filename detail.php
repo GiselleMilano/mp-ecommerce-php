@@ -149,6 +149,7 @@
                                         $item->integrator_id = $_POST['integrator_id'];
                                         
                                         $preference->items = array($item);
+                                        $preference->notificaction_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notificaction.php";
                                         
                                         //url de regreso al sitio
                                         $preference->back_urls = array(
@@ -156,9 +157,10 @@
                                             "failure" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php",
                                             "pending" => "https://gisellemilano-mp-ecommerce-php.herokuapp.com/back.php"
                                         );
+
                                         $preference->auto_return = "approved";
                                         $preference->save();
-                                        $preference->notificaction_url = "https://gisellemilano-mp-ecommerce-php.herokuapp.com/notificaction.php";
+
                                         //informacion del comprador
                                         $payer = new MercadoPago\Payer();
                                         $payer->name = "Lalo";
